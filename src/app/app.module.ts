@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
-import { AppComponent } from './app.component'
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatSelectModule } from '@angular/material/select'
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json')
@@ -24,6 +26,8 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
       defaultLanguage: 'en',
     }),
+    BrowserAnimationsModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

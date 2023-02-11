@@ -1,12 +1,15 @@
 <div class="main-container">
   <section class="main-content">
 
-    <label for="select" class="label-lang">  {{ 'LANG.LABEL' | translate}}</label>
-    <select [value] ="translate.currentLang"  (change)="onSelectChange($event)" class="select" id="select">
-      <option *ngFor="let item of 'LANG.SELECT' | translate" [value]="item.KEY">{{item.VALUE}}</option>
-    </select>
+    <mat-form-field appearance="legacy" class="select-field">
+      <mat-label>{{ 'LANG.LABEL' | translate}}</mat-label>
+      <mat-select [value]="translate.currentLang" (selectionChange)="onSelectChange($event)" class="select">
+        <mat-option *ngFor="let item of 'LANG.SELECT' | translate" [value]="item.KEY">
+          {{item.VALUE}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
 
-    <!-- -------------[value]="translate.currentLang" -->
     <h1 class="main-title">{{ "RESUME.NAME" | translate }}</h1>
     <span class="speciality">{{ "RESUME.SPECIALTY" | translate }}</span>
 
@@ -14,7 +17,9 @@
       <h2 class="article-title">{{ "RESUME.TITLE.VAL_1" | translate }}</h2>
       <p class="article-content">
         {{ "RESUME.ARTICLE.VAL_1" | translate }}
-        <!-- <a class="link-home" [routerLink]="'/main'">{{ "RESUME.LINK.VAL_1" | translate }}</a> -->
+        <a href="https://euphonious-pavlova-4b8197.netlify.app" target="_blank" rel="noreferrer noopener">
+          {{ "RESUME.LINK.VAL_1" | translate }}
+        </a>
         {{ "RESUME.ARTICLE.VAL_2" | translate }}
       </p>
     </article>
@@ -133,7 +138,7 @@
               <a href="https://github.com/Viacheslav-ua/skills-server/tree/after-refactoring" target="_blank" rel="noreferrer noopener">
                 {{ "RESUME.LINK.SOURCE_4" | translate }}
               </a>
-              <a href="serverDocs" target="_blank" rel="noreferrer noopener">
+              <a href="https://skills.fly.dev/docs" target="_blank" rel="noreferrer noopener">
                 {{ "RESUME.LINK.BASK_DOCS" | translate }}
               </a>
             </div>
