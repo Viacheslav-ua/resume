@@ -1,15 +1,16 @@
 <div class="main-container">
   <section class="main-content">
-
-    <mat-form-field appearance="legacy" class="select-field">
-      <mat-label>{{ 'LANG.LABEL' | translate}}</mat-label>
-      <mat-select [value]="translate.currentLang" (selectionChange)="onSelectChange($event)" class="select">
-        <mat-option *ngFor="let item of 'LANG.SELECT' | translate" [value]="item.KEY">
-          {{item.VALUE}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-
+    <div class="menu">
+      <mat-form-field appearance="legacy" class="select-field">
+        <mat-label>{{ 'LANG.LABEL' | translate}}</mat-label>
+        <mat-select [value]="translate.currentLang" (selectionChange)="onSelectChange($event)" class="select">
+          <mat-option *ngFor="let item of 'LANG.SELECT' | translate" [value]="item.KEY">
+            {{item.VALUE}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <a class="menu-home" href="https://euphonious-pavlova-4b8197.netlify.app">{{ "RESUME.LINK.VAL_1_2" | translate }}</a>
+    </div>
     <h1 class="main-title">{{ "RESUME.NAME" | translate }}</h1>
     <span class="speciality">{{ "RESUME.SPECIALTY" | translate }}</span>
 
@@ -28,71 +29,34 @@
       <h2 class="article-title">{{ "RESUME.TITLE.VAL_2" | translate }}</h2>
       <span >
         <ul class="article-content">
+
           <li class="item-project">
             <p class="item-content">
-              {{ "RESUME.TEXT.VAL_1" | translate }}
+              <a href="https://euphonious-pavlova-4b8197.netlify.app">{{ "RESUME.LINK.VAL_1_1" | translate }}</a>
+              {{ "RESUME.TEXT.VAL_9" | translate }}
             </p>
             <div class="link-block">
-              <a href="https://viacheslav-ua.github.io/goit-markup-hw-08" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.PROJECT" | translate }}
+              <a href="https://github.com/Viacheslav-ua/skills-client/tree/dev" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.SOURCE_3" | translate }}
               </a>
-              <a href="https://github.com/Viacheslav-ua/goit-markup-hw-08" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.SOURCE" | translate }}
+              <a href="https://github.com/Viacheslav-ua/skills-server/tree/after-refactoring" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.SOURCE_4" | translate }}
+              </a>
+              <a href="https://skills.fly.dev/docs" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.BASK_DOCS" | translate }}
               </a>
             </div>
           </li>
 
           <li class="item-project">
             <p class="item-content">
-              {{ "RESUME.TEXT.VAL_2" | translate }}
+              {{ "RESUME.TEXT.VAL_8" | translate }}
             </p>
             <div class="link-block">
-              <a href="https://tatianachepovaya.github.io/donut-master-class" target="_blank" rel="noreferrer noopener">
+              <a href="https://kapusta-wallet-finance.netlify.app/" target="_blank" rel="noreferrer noopener">
                 {{ "RESUME.LINK.PROJECT" | translate }}
               </a>
-              <a href="https://github.com/Viacheslav-ua/donut-master-class" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.SOURCE" | translate }}
-              </a>
-            </div>
-          </li>
-
-          <li class="item-project">
-            <p class="item-content">
-              {{ "RESUME.TEXT.VAL_3" | translate }}
-            </p>
-            <div class="link-block">
-              <a href="https://viacheslav-ua.github.io/goit-js-hw-13-image-finder" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.PROJECT" | translate }}
-              </a>
-              <a href="https://github.com/Viacheslav-ua/goit-js-hw-13-image-finder" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.SOURCE" | translate }}
-              </a>
-            </div>
-          </li>
-
-          <li class="item-project">
-            <p class="item-content">
-              {{ "RESUME.TEXT.VAL_4" | translate }}
-            </p>
-            <div class="link-block">
-              <a href="https://viacheslav-ua.github.io/team-attraction-project/" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.PROJECT" | translate }}
-              </a>
-              <a href="https://github.com/Viacheslav-ua/team-attraction-project" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.SOURCE" | translate }}
-              </a>
-            </div>
-          </li>
-
-          <li class="item-project">
-            <p class="item-content">
-              {{ "RESUME.TEXT.VAL_5" | translate }}
-            </p>
-            <div class="link-block">
-              <a href="https://viacheslav-ua.github.io/goit-react-hw-04-hooks-images/" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.PROJECT" | translate }}
-              </a>
-              <a href="https://github.com/Viacheslav-ua/goit-react-hw-04-hooks-images" target="_blank" rel="noreferrer noopener">
+              <a href="https://github.com/Viacheslav-ua/team-project-kapusta-finance-back-end" target="_blank" rel="noreferrer noopener">
                 {{ "RESUME.LINK.SOURCE" | translate }}
               </a>
             </div>
@@ -114,13 +78,13 @@
 
           <li class="item-project">
             <p class="item-content">
-              {{ "RESUME.TEXT.VAL_8" | translate }}
+              {{ "RESUME.TEXT.VAL_5" | translate }}
             </p>
             <div class="link-block">
-              <a href="https://kapusta-wallet-finance.netlify.app/" target="_blank" rel="noreferrer noopener">
+              <a href="https://viacheslav-ua.github.io/goit-react-hw-04-hooks-images/" target="_blank" rel="noreferrer noopener">
                 {{ "RESUME.LINK.PROJECT" | translate }}
               </a>
-              <a href="https://github.com/Viacheslav-ua/team-project-kapusta-finance-back-end" target="_blank" rel="noreferrer noopener">
+              <a href="https://github.com/Viacheslav-ua/goit-react-hw-04-hooks-images" target="_blank" rel="noreferrer noopener">
                 {{ "RESUME.LINK.SOURCE" | translate }}
               </a>
             </div>
@@ -128,18 +92,56 @@
 
           <li class="item-project">
             <p class="item-content">
-              <a href="">{{ "RESUME.LINK.VAL_1" | translate }}</a>
-              {{ "RESUME.TEXT.VAL_9" | translate }}
+              {{ "RESUME.TEXT.VAL_4" | translate }}
             </p>
             <div class="link-block">
-              <a href="https://github.com/Viacheslav-ua/skills-client/tree/dev" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.SOURCE_3" | translate }}
+              <a href="https://viacheslav-ua.github.io/team-attraction-project/" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.PROJECT" | translate }}
               </a>
-              <a href="https://github.com/Viacheslav-ua/skills-server/tree/after-refactoring" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.SOURCE_4" | translate }}
+              <a href="https://github.com/Viacheslav-ua/team-attraction-project" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.SOURCE" | translate }}
               </a>
-              <a href="https://skills.fly.dev/docs" target="_blank" rel="noreferrer noopener">
-                {{ "RESUME.LINK.BASK_DOCS" | translate }}
+            </div>
+          </li>
+
+          <li class="item-project">
+            <p class="item-content">
+              {{ "RESUME.TEXT.VAL_3" | translate }}
+            </p>
+            <div class="link-block">
+              <a href="https://viacheslav-ua.github.io/goit-js-hw-13-image-finder" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.PROJECT" | translate }}
+              </a>
+              <a href="https://github.com/Viacheslav-ua/goit-js-hw-13-image-finder" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.SOURCE" | translate }}
+              </a>
+            </div>
+          </li>
+
+          <li class="item-project">
+            <p class="item-content">
+              {{ "RESUME.TEXT.VAL_2" | translate }}
+            </p>
+            <div class="link-block">
+              <a href="https://tatianachepovaya.github.io/donut-master-class" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.PROJECT" | translate }}
+              </a>
+              <a href="https://github.com/Viacheslav-ua/donut-master-class" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.SOURCE" | translate }}
+              </a>
+            </div>
+          </li>
+
+          <li class="item-project">
+            <p class="item-content">
+              {{ "RESUME.TEXT.VAL_1" | translate }}
+            </p>
+            <div class="link-block">
+              <a href="https://viacheslav-ua.github.io/goit-markup-hw-08" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.PROJECT" | translate }}
+              </a>
+              <a href="https://github.com/Viacheslav-ua/goit-markup-hw-08" target="_blank" rel="noreferrer noopener">
+                {{ "RESUME.LINK.SOURCE" | translate }}
               </a>
             </div>
           </li>
